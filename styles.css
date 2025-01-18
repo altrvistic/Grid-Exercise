@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 8;
+    gap: 16px;
+}
+
+.about-wrapper{
+    grid-column: span 2;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.img-wrapper{
+    grid-column: span 5;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:24px;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.link-wrapper {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    overflow: scroll;
+}
+
+img {
+    width: 60%;
+}
