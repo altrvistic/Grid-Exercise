@@ -1,13 +1,41 @@
+body{
+    background-color: rgb(255, 239, 242);
+    margin: 50px;
+    color:rgb(26, 25, 25);
+}
+
+.pinyon-script-regular {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+h1 {
+    font-family:"Pinyon Script", serif;
+    font-size: 100px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family:"Pinyon Script", serif;
+    font-size: 50px;
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 8;
-    gap: 16px;
+    grid-template-columns: 4fr 3fr 2fr;
+    grid-template-rows: 1fr 3fr .5fr;
+    gap: 50px;
+    height: 100vh;
+}
+
+.top {
+    padding: 30px;
 }
 
 .about-wrapper{
     grid-column: span 2;
-    grid-template-columns: repeat(3,1fr);
+  
 }
 
 .img-wrapper{
@@ -18,19 +46,93 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin:24px;
-    height: 100vh;
     overflow: scroll;
 }
 
 .link-wrapper {
     grid-column: span 1;
+    grid-column-start: 3;
+    overflow-y: scroll;
+    grid-row-start: 2;
+    justify-items: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.wardrobe-wrap img {
+    max-height: 40vh;
+}
+
+.key-terms{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.wardrobe-wrap {
+    grid-row-start: 1;
+    grid-column: span 2;
+    grid-row: span 1;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 100vh;
-    overflow: scroll;
+    align-items: center;
+    align-self: center;
+  
+}
+
+.wardrobe {
+    display:flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 30px;
+    max-width: 50vw;
+}
+
+.wardrobe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 img {
-    width: 60%;
+    border-radius: 50px
+}
+
+.index-wrap {
+    grid-row-start: 2;
+    grid-column: span 1;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column-start: 1;
+    height: 100vh;
+  
+  
+}
+
+.index {
+    display:flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 30px;
+}
+
+.index-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+}
+
+.index-item img {
+    max-height: 100vh;
+    width: 100%;
+}
+
+footer {
+    grid-column: span 3;
+    align-self: center;
+    justify-self: center;
 }
